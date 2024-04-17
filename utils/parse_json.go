@@ -94,7 +94,6 @@ func findJSON(fieldName string, indent string, findValue string, fieldMatch stri
 			} else {
 				fmt.Printf("%s{\n", indent)
 			}
-				
 			isMatchObj = true
 		}
 		for i, u := range vv {
@@ -111,7 +110,7 @@ func findJSON(fieldName string, indent string, findValue string, fieldMatch stri
 			fmt.Printf("\"%s\": null\n", fieldName)
 		}
 	case bool:
-		fvBool, err := strconv.ParseBool(findValue)		
+		fvBool, err := strconv.ParseBool(findValue)
 		if err == nil && fvBool == vv {
 			fmt.Printf("\"%s\": %t\n", fieldName, vv)
 		}

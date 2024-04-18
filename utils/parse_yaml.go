@@ -72,7 +72,7 @@ func check(err error) {
 func main() {
 	flags.Parse(&opts)
 	if opts.FileName == "" {
-		fmt.Printf("Usage: parse_json filename\n")
+		fmt.Printf("Usage: parse_yaml filename\n")
 		os.Exit(1)
 	}
 	byteValue, err := os.ReadFile(opts.FileName)
